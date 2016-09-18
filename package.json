@@ -10,6 +10,14 @@
     "express",
     "log"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bruceCzK/express-logs"
+  },
+  "bugs": {
+    "url": "https://github.com/bruceCzK/express-logs/issues",
+    "email": "bruceczk@foxmail.com"
+  },
   "author": "BruceCzK",
   "license": "ISC",
   "dependencies": {
