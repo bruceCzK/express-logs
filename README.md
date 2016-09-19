@@ -4,10 +4,14 @@ An express log middleware which add a `logs` object to request
 
 ## Usage
 ```
+$ npm i express-logs -S
+```
+
+## Example
+```
 const express = require('express')
 const app = express() 
-
-app.use(require('express-logs'))
+app.use(require('express-logs')())
 
 app.get('/', (req, res, next) => {
   req.logs.log('Request start.')
@@ -42,3 +46,10 @@ Request using 5004ms
 All logs will be printed **AFTER** the request is end.
 
 It's a lot more convenient for debug、performance monitor in this way instead of print log immediately.
+
+## Options
+```
+{
+  requestTiming: [Boolean] // default is true
+}
+```
