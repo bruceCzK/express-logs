@@ -17,7 +17,7 @@ app.get('/', (req, res, next) => {
   req.logs.log('Request start.')
   
   setTimeout(() => {
-    req.logs.error('Ooops, Something's wrong')
+    req.logs.error('Ooops, Something\'s wrong')
   }, 1000)
   
   someMethod.call(req)
@@ -36,11 +36,12 @@ function someMethod() {
 will print something like below
 ```
 ----------
-[2016-09-18T10:00:49.000Z] Request start.
-[2016-09-18T10:00:50.002Z] Ooops, Something's wrong
-[2016-09-18T10:00:50.007Z] In method log
-[2016-09-18T10:00:55.008Z] slowOperation process done, using 5000ms
-Request using 5004ms
+[2016-09-21T14:27:41.294Z] Request start.
+[2016-09-21T14:27:41.296Z] In method log
+[2016-09-21T14:27:42.297Z] Ooops, Something's; wrong
+[2016-09-21T14:27:42.298Z] slowOperation done, using 1001ms
+[2016-09-21T14:27:42.308Z] Request done using 1015ms
+
 ```
 
 All logs will be printed **AFTER** the request is end.

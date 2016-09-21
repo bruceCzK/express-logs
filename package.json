@@ -4,7 +4,7 @@
   "description": "Express log middleware",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./test/example.js"
   },
   "keywords": [
     "express",
@@ -22,5 +22,8 @@
   "license": "ISC",
   "dependencies": {
     "lodash": "^4.15.0"
+  },
+  "devDependencies": {
+    "express": "^4.14.0"
   }
 }
