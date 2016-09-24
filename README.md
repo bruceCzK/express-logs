@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/express-logs.png)](https://badge.fury.io/js/express-logs)
+
 # express-logs
 
 An express log middleware which add a `logs` object to request
