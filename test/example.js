@@ -7,10 +7,10 @@ const app = express();
 app.use(require('../index')());
 
 app.get('/', (req, res, next) => {
-  req.logs.warn('** Request start **');
+  req.logs.warn('** Request start ** (This is a custom warning)');
 
   setTimeout(() => {
-    req.logs.error('Ooops, Something\'s; wrong');
+    req.logs.error('Ooops, Something\'s wrong');
   }, 1000);
 
   someMethod.call(req);

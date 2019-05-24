@@ -51,6 +51,7 @@ It's a lot more convenient for debug、performance monitor in this way instead o
 ## Options
 ```
 {
+  format: 'YYYY-MM-DD HH:mm:ss.SSS', // default is 'YYYY-MM-DD HH:mm:ss.SSS', could be any valid format for momentjs
   requestTiming: [Boolean] // default is true
 }
 ```
