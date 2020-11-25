@@ -21,8 +21,8 @@
   "author": "BruceCzK",
   "license": "ISC",
   "dependencies": {
-    "lodash": "^4.17.11",
-    "moment": "^2.24.0"
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1"
   },
   "devDependencies": {
     "express": "^4.17.0"
